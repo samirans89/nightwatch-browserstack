@@ -10,7 +10,7 @@
 		"parallel": "./node_modules/.bin/nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
 		"parallel_local": "node scripts/local.runner.js -c conf/parallel_local.conf.js -e chrome,firefox,safari",
 		"suite": "./node_modules/.bin/nightwatch -c conf/suite.conf.js",
-		"suite_parallel_local": "node scripts/local.runner.js -c conf/suite_parallel_local.conf.js -e chrome,firefox,safari"
+		"suite_parallel_local": "node scripts/local.runner.js -c conf/suite_parallel_local.conf.js"
 	},
 	"repository": {
 		"type": "git",

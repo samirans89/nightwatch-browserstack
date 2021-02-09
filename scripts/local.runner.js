@@ -16,10 +16,15 @@ try {
 
 			console.log("Connected. Now testing...");
 			Nightwatch.cli(function (argv) {
-				Nightwatch.CliRunner(argv).setup(null, function () {
-					// Code to stop browserstack local after end of parallel test
-					bs_local.stop(function () {});
-				});
+				Nightwatch.CliRunner(argv)
+					.setup(null, function () {
+						// Code to stop browserstack local after end of parallel test
+						bs_local.stop(function () {});
+					})
+					.runTests(function () {
+						// Code to stop browserstack local after end of single test
+						bs_local.stop(function () {});
+					});
 			});
 		}
 	);
