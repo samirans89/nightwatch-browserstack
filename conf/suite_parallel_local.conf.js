@@ -40,7 +40,7 @@ nightwatch_config = {
 
 	test_workers: {
 		enabled: true,
-		workers: 75,
+		workers: 100,
 	},
 };
 
