@@ -10,7 +10,7 @@ nightwatch_config = {
 	},
 
 	common_capabilities: {
-		build: "NightWatch 1-75-250",
+		build: "NightWatch 1-100-250",
 		"browserstack.user":
 			process.env.BROWSERSTACK_USERNAME || "BROWSERSTACK_USERNAME",
 		"browserstack.key":
