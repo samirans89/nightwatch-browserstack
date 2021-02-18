@@ -11,6 +11,7 @@
 * Update `*.conf.js` files inside the `conf/` directory with your BrowserStack Username and Access Key(https://www.browserstack.com/accounts/settings)
 
 ## Running your tests
+- To run 100 parallel tests using BrowserStack Local, run `npm run suite_parallel_local`
 - To run a single test, run `npm run single`
 - To run local tests, run `npm run local`
 - To run parallel tests, run `npm run parallel`
@@ -21,14 +22,14 @@
 * You can view your test results on the [BrowserStack automate dashboard](https://automate.browserstack.com)
 * To test on a different set of browsers, check out our [capabilities generator](https://www.browserstack.com/automate/capabilities)
 * You can export the environment variables for the Username and Access Key of your BrowserStack account
-  
+
   ```
   export BROWSERSTACK_USERNAME=<browserstack-username> &&
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
 
 ## Connecting to BrowserStack via a proxy server
-You can specify proxy settings in Nightwatch by adding the `proxy` key in your `*.conf.js` 
+You can specify proxy settings in Nightwatch by adding the `proxy` key in your `*.conf.js`
 
 ```javascript
   test_settings: {
@@ -44,7 +45,7 @@ You can specify proxy settings in Nightwatch by adding the `proxy` key in your `
     }
   }
 ```
-  
+
 ## Additional Resources
 * [Documentation for writing automate test scripts in Node](https://www.browserstack.com/docs/automate/selenium/getting-started/nodejs)
 * [Customizing your tests on BrowserStack](https://www.browserstack.com/automate/capabilities)
