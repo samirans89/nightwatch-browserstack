@@ -28,7 +28,7 @@ nightwatch_config = {
 		},
 		firefox: {
 			desiredCapabilities: {
-				browser: "firefox",
+				browser: "chrome",
 			},
 		},
 		safari: {
