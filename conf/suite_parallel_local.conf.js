@@ -8,9 +8,8 @@ nightwatch_config = {
 		host: "hub-cloud.browserstack.com",
 		port: 443,
 	},
-
 	common_capabilities: {
-		build: "NightWatch 25p - Run 2 (GitHub Actions)",
+		build: "NightWatch 100p - Run 5 (GA) - with node processes count",
 		"browserstack.user":
 			process.env.BROWSERSTACK_USERNAME || "BROWSERSTACK_USERNAME",
 		"browserstack.key":
