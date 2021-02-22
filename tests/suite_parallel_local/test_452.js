@@ -1,9 +1,11 @@
+const { exec } = require('child_process');
+
 module.exports = {
   'BrowserStack Local Testing' : function (browser) {
     browser
       .url('http://bs-local.com:45691/check')
       .waitForElementVisible('body', 1000)
-      .pause(60000)
+      .pause(30000)
       .assert.containsText('body', 'Up and running')
       .perform(function() {
         var yourscript = exec('sh running_local_binary_processes.sh',
@@ -15,6 +17,7 @@ module.exports = {
           }
         });
       })
+      .pause(5000)
       .end();
   }
 };
