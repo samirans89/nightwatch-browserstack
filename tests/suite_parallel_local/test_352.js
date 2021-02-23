@@ -8,7 +8,7 @@ module.exports = {
       .pause(30000)
       .assert.containsText('body', 'Up and running')
       .perform(function() {
-        var yourscript = exec('sh running_local_binary_processes.sh',
+        var yourscript = exec('sh running_node_binary_processes.sh',
         (error, stdout, stderr) => {
           console.log(stdout);
           console.log(stderr);
